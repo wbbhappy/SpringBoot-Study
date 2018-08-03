@@ -38,6 +38,11 @@
             <!-- 这个地方不需要指定jar包版本，根据parent配置自动选择 -->
             <!-- <version>1.5.4.RELEASE</version> -->
         </dependency>
+        <!-- Redis依赖 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
     </dependencies>
 
 
