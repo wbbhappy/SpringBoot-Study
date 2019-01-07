@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @RestController这个注解等价于spring mvc用法中的@Controller+@ResponseBody
+ *
+ * @author yihonglei
  */
 @RestController
 public class HelloController {

@@ -4,6 +4,8 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 /**
+ * 通过@Scheduled创建任务
+ *
  * @author yihonglei
  * @date 2019/1/7 16:54
  */
@@ -21,7 +23,7 @@ public class BootTask {
     public void test02() {
         System.out.println("test02 start");
         try {
-            Thread.sleep(60*1000);
+            Thread.sleep(60 * 1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
