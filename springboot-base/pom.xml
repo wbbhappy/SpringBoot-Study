@@ -16,6 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
 
         <junit.version>4.11</junit.version>
     </properties>
@@ -23,7 +24,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.4.RELEASE</version>
+        <version>2.0.8.RELEASE</version>
     </parent>
 
     <dependencies>
@@ -40,7 +41,7 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
             <!-- 这个地方不需要指定jar包版本，根据parent配置自动选择 -->
-            <!-- <version>1.5.4.RELEASE</version> -->
+            <!-- <version>2.0.8.RELEASE</version> -->
         </dependency>
 
         <!-- Redis依赖 -->
