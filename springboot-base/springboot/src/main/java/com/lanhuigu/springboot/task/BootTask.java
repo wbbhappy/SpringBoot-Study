@@ -12,14 +12,14 @@ import org.springframework.stereotype.Component;
 @Component
 public class BootTask {
 
-    @Scheduled(fixedDelay = 1000)
+    // @Scheduled(fixedDelay = 1000)
     public void test01() {
         System.out.println("test01 start");
         System.out.println("执行业务逻辑...");
         System.out.println("test01 end");
     }
 
-    @Scheduled(fixedDelay = 1000)
+    // @Scheduled(fixedDelay = 1000)
     public void test02() {
         System.out.println("test02 start");
         try {

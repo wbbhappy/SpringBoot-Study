@@ -13,12 +13,8 @@ import org.springframework.stereotype.Service;
 @Service
 public class HelloServiceImpl implements HelloService {
 
-    @Autowired
-    private RedisTemplate<String, String> redis;
-
     @Override
     public String sayHello(String name) {
-        HashRedisUtil.hset(redis, "user", "name", "TestSpringBootRedis");
         return "Hello, " + name;
     }
 
