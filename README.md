@@ -1,6 +1,8 @@
 # 基础篇
 SpringBoot环境搭建 https://blog.csdn.net/yhl_jxy/article/details/59102215
 
+Spring Boot返回json数据 https://blog.csdn.net/yhl_jxy/article/details/59106628
+
 # 进阶篇
 
 
