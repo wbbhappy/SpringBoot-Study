@@ -51,5 +51,13 @@
         </dependency>
     </dependencies>
 
+    <!-- 引入一个spring boot插件，可以支持我们将web应用程序打成可运行jar包 -->
+    <build>
+        <plugins> <plugin>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-maven-plugin</artifactId> </plugin>
+        </plugins>
+    </build>
+
 
 </project>
