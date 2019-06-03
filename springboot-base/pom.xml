@@ -52,6 +52,7 @@
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
 
+        <!-- fastjson -->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>fastjson</artifactId>
@@ -61,9 +62,36 @@
 
     <!-- 引入一个spring boot插件，可以支持我们将web应用程序打成可运行jar包 -->
     <build>
-        <plugins> <plugin>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-maven-plugin</artifactId> </plugin>
+        <plugins>
+            <!-- Spring Boot打包插件 -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+
+            <!-- 添加spring loader plugin -->
+<!--            <plugin>-->
+<!--                <groupId>org.springframework.boot</groupId>-->
+<!--                <artifactId>spring-boot-maven-plugin</artifactId>-->
+<!--                <dependencies>-->
+<!--                    &lt;!&ndash; springloaded热部署 &ndash;&gt;-->
+<!--                    <dependency>-->
+<!--                        <groupId>org.springframework</groupId>-->
+<!--                        <artifactId>springloaded</artifactId>-->
+<!--                        <version>1.2.8.RELEASE</version>-->
+<!--                    </dependency>-->
+<!--                </dependencies>-->
+<!--                <executions>-->
+<!--                    <execution>-->
+<!--                        <goals>-->
+<!--                            <goal>repackage</goal>-->
+<!--                        </goals>-->
+<!--                        <configuration>-->
+<!--                            <classifier>exec</classifier>-->
+<!--                        </configuration>-->
+<!--                    </execution>-->
+<!--                </executions>-->
+<!--            </plugin>-->
         </plugins>
     </build>
 
