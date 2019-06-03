@@ -3,12 +3,11 @@ package com.lanhuigu.springboot.controller;
 import com.lanhuigu.springboot.service.HelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * @RestController这个注解等价于spring mvc用法中的@Controller+@ResponseBody
+ * Spring Boot的@RestController注解等价于Spring MVC的@Controller+@ResponseBody
  *
  * @author yihonglei
  */
@@ -18,7 +17,7 @@ public class HelloController {
     @Autowired
     private HelloService helloService;
 
-    @RequestMapping(value = "/hello", method = RequestMethod.GET)
+    @RequestMapping(value = "/hello")
     public String hello(@RequestParam("name") String name) {
         return helloService.sayHello(name);
     }
