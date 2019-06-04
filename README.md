@@ -7,6 +7,8 @@ Spring Boot如何使用第三方json解析框架 https://blog.csdn.net/yhl_jxy/a
 
 Spring Boot下Spring Data JPA的使用 https://blog.csdn.net/yhl_jxy/article/details/60129383
 
+Spring Boot使用JdbcTemplate操作数据库 https://blog.csdn.net/yhl_jxy/article/details/60141799
+
 # 进阶篇
 
 
