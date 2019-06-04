@@ -6,7 +6,7 @@ package com.lanhuigu.springboot.vo;
  * @auther: yihonglei
  * @date: 2019-06-02 09:39
  */
-public class User {
+public class UserVO {
     private int id;
     private String name;
 

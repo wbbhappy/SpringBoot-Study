@@ -1,6 +1,6 @@
 package com.lanhuigu.springboot.controller;
 
-import com.lanhuigu.springboot.vo.User;
+import com.lanhuigu.springboot.vo.UserVO;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -14,8 +14,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
     @RequestMapping("/getUser")
-    public User getUser() {
-        User user = new User();
+    public UserVO getUser() {
+        UserVO user = new UserVO();
         user.setId(1);
         user.setName("return json");
         return user;
