@@ -1,5 +1,6 @@
 package com.lanhuigu.springboot.service.impl;
 
+import com.lanhuigu.springboot.dao.CatDao;
 import com.lanhuigu.springboot.dao.CatRepository;
 import com.lanhuigu.springboot.domain.Cat;
 import com.lanhuigu.springboot.service.ICatService;
@@ -20,6 +21,8 @@ import javax.transaction.Transactional;
 public class CatServiceImpl implements ICatService {
     @Resource
     private CatRepository catRepository;
+    @Resource
+    private CatDao catDao;
 
     /**
      * 保存数据
@@ -48,5 +51,13 @@ public class CatServiceImpl implements ICatService {
     public Iterable<Cat> getAll() {
 
         return catRepository.findAll();
+    }
+
+    /**
+     * 根据name查询
+     */
+    public Cat queryByCatName(String catName) {
+
+        return catDao.queryByCatName(catName);
     }
 }

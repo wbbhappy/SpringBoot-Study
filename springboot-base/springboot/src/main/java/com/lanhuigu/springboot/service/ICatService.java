@@ -17,10 +17,15 @@ public interface ICatService {
     /**
      * 删除数据
      */
-    public void delete(int id);
+    void delete(int id);
 
     /**
      * 查询数据
      */
-    public Iterable<Cat> getAll();
+    Iterable<Cat> getAll();
+
+    /**
+     * 根据name查询
+     */
+    Cat queryByCatName(String catName);
 }

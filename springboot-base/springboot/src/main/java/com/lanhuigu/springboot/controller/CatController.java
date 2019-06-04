@@ -1,6 +1,7 @@
 package com.lanhuigu.springboot.controller;
 
 import com.lanhuigu.springboot.domain.Cat;
+import com.lanhuigu.springboot.service.ICatService;
 import com.lanhuigu.springboot.service.impl.CatServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -14,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/cat")
 public class CatController {
     @Autowired
-    private CatServiceImpl catService;
+    private ICatService catService;
 
     /**
      * 保存数据
@@ -48,5 +49,14 @@ public class CatController {
     public Iterable<Cat> getAll() {
 
         return catService.getAll();
+    }
+
+    /**
+     * jdbcTemplate查询数据使用
+     */
+    @RequestMapping("/queryByCatName")
+    public Cat queryByCatName(String catName) {
+
+        return catService.queryByCatName(catName);
     }
 }
