@@ -46,6 +46,12 @@
             <!-- <version>1.5.17.RELEASE</version> -->
         </dependency>
 
+        <!-- actuator -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
         <!-- Redis依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
