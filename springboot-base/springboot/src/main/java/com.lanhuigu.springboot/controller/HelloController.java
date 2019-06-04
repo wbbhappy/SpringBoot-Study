@@ -19,6 +19,7 @@ public class HelloController {
 
     @RequestMapping(value = "/hello")
     public String hello(@RequestParam("name") String name) {
+
         return helloService.sayHello(name);
     }
 
