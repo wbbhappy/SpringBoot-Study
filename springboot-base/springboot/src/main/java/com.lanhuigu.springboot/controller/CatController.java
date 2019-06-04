@@ -2,7 +2,6 @@ package com.lanhuigu.springboot.controller;
 
 import com.lanhuigu.springboot.domain.Cat;
 import com.lanhuigu.springboot.service.ICatService;
-import com.lanhuigu.springboot.service.impl.CatServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
