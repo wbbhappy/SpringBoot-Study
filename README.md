@@ -9,6 +9,10 @@ Spring Boot使用JPA、CrudRepository https://blog.csdn.net/yhl_jxy/article/deta
 
 Spring Boot使用JdbcTemplate操作数据库 https://blog.csdn.net/yhl_jxy/article/details/60141799
 
+Spring Boot使用thymeleaf模板引擎 https://blog.csdn.net/yhl_jxy/article/details/60572902
+
+Spring Boot使用freemarker模板引擎 https://blog.csdn.net/yhl_jxy/article/details/60573458
+
 # 进阶篇
 
 
