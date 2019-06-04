@@ -26,4 +26,13 @@ public class TemplatesController {
         return "hello";
     }
 
+
+    @RequestMapping("/helloFtl")
+    public String helloFtl(Map<String, Object> map) {
+        map.put("nameKey", "freemarker");
+
+        // 返回的testFtl对应src/main/resources/templates下的testFtl.ftl
+        return "testFtl";
+    }
+
 }
