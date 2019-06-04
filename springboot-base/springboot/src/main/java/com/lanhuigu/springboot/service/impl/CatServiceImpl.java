@@ -2,6 +2,7 @@ package com.lanhuigu.springboot.service.impl;
 
 import com.lanhuigu.springboot.dao.CatRepository;
 import com.lanhuigu.springboot.domain.Cat;
+import com.lanhuigu.springboot.service.CatService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -16,7 +17,7 @@ import javax.transaction.Transactional;
  * @date: 2019-06-04 10:46
  */
 @Service
-public class CatService {
+public class CatServiceImpl implements CatService {
     @Resource
     private CatRepository catRepository;
 
@@ -24,6 +25,7 @@ public class CatService {
      * 保存数据
      */
     @Transactional
+    @Override
     public void save(Cat cat) {
 
         catRepository.save(cat);
@@ -33,6 +35,7 @@ public class CatService {
      * 删除数据
      */
     @Transactional
+    @Override
     public void delete(int id) {
 
         catRepository.delete(id);
@@ -41,6 +44,7 @@ public class CatService {
     /**
      * 查询数据
      */
+    @Override
     public Iterable<Cat> getAll() {
 
         return catRepository.findAll();

@@ -1,12 +1,10 @@
 package com.lanhuigu.springboot.controller;
 
 import com.lanhuigu.springboot.domain.Cat;
-import com.lanhuigu.springboot.service.impl.CatService;
+import com.lanhuigu.springboot.service.impl.CatServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import javax.annotation.Resource;
 
 /**
  * @auther: yihonglei
@@ -16,7 +14,7 @@ import javax.annotation.Resource;
 @RequestMapping("/cat")
 public class CatController {
     @Autowired
-    private CatService catService;
+    private CatServiceImpl catService;
 
     /**
      * 保存数据
@@ -37,6 +35,7 @@ public class CatController {
      */
     @RequestMapping("/delete")
     public String delete() {
+        // 这里只删了id为1的
         catService.delete(1);
 
         return "delete ok";
