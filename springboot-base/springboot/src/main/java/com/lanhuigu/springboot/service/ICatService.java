@@ -8,7 +8,7 @@ import com.lanhuigu.springboot.domain.Cat;
  * @auther: yihonglei
  * @date: 2019-06-04 11:03
  */
-public interface CatService {
+public interface ICatService {
     /**
      * 保存数据
      */

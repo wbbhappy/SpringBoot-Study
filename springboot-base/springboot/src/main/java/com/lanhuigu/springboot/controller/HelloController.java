@@ -1,6 +1,6 @@
 package com.lanhuigu.springboot.controller;
 
-import com.lanhuigu.springboot.service.HelloService;
+import com.lanhuigu.springboot.service.IHelloService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
 
     @Autowired
-    private HelloService helloService;
+    private IHelloService helloService;
 
     @RequestMapping(value = "/hello")
     public String hello(@RequestParam("name") String name) {

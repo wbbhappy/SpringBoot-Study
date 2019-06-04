@@ -2,7 +2,7 @@ package com.lanhuigu.springboot.service.impl;
 
 import com.lanhuigu.springboot.dao.CatRepository;
 import com.lanhuigu.springboot.domain.Cat;
-import com.lanhuigu.springboot.service.CatService;
+import com.lanhuigu.springboot.service.ICatService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -17,7 +17,7 @@ import javax.transaction.Transactional;
  * @date: 2019-06-04 10:46
  */
 @Service
-public class CatServiceImpl implements CatService {
+public class CatServiceImpl implements ICatService {
     @Resource
     private CatRepository catRepository;
 
