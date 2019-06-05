@@ -10,5 +10,4 @@ import org.springframework.data.repository.CrudRepository;
  * @date: 2019-06-04 10:45
  */
 public interface CatRepository extends CrudRepository<Cat, Integer> {
-
 }

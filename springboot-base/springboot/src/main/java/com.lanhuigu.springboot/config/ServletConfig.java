@@ -7,7 +7,7 @@ import com.lanhuigu.springboot.filter.LanhuiguFilter;
 import com.lanhuigu.springboot.interceptor.LanhuiguInterceptor;
 import com.lanhuigu.springboot.servlet.LanhuiguServlet;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.autoconfigure.web.HttpMessageConverters;
+import org.springframework.boot.autoconfigure.http.HttpMessageConverters;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.boot.web.servlet.ServletRegistrationBean;
 import org.springframework.context.annotation.Bean;
