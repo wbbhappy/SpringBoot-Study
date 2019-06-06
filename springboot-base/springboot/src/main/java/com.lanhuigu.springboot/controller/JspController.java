@@ -12,7 +12,7 @@ import java.util.Map;
  * @date: 2019-06-04 14:01
  */
 @Controller
-public class IndexController {
+public class JspController {
 
     @RequestMapping("/index")
     public String index(Map<String, Object> map) {
