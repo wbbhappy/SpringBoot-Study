@@ -7,12 +7,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
+ * Spring Boot整合jpa
+ *
  * @auther: yihonglei
  * @date: 2019-06-04 10:49
  */
 @RestController
 @RequestMapping("/cat")
-public class CatController {
+public class JpaController {
     @Autowired
     private ICatService catService;
 
@@ -48,14 +50,5 @@ public class CatController {
     public Iterable<Cat> getAll() {
 
         return catService.getAll();
-    }
-
-    /**
-     * jdbcTemplate查询数据使用
-     */
-    @RequestMapping("/queryByCatName")
-    public Cat queryByCatName(String catName) {
-
-        return catService.queryByCatName(catName);
     }
 }
